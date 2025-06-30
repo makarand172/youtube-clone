@@ -1,0 +1,71 @@
+.filter-btn-container {
+  padding: 10px 0px;
+  display: flex;
+  position: sticky;
+  top: 66px;
+  z-index: 100;
+  background: #fffffff9;
+  width: 100%;
+}
+
+.filter-btn-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-left: 10px;
+}
+
+.filter-btn-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.filter-btn-list button {
+  border: none;
+  background-color: #efefef;
+  padding: 0px 13px;
+  font-size: 14px;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filter-btn-list > .active-btn {
+  background-color: black;
+  color: white;
+}
+
+.previous {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1;
+  z-index: 100;
+  border: none;
+  width: 45px;
+  height: 40px;
+  border-radius: 21px;
+  background-color: white;
+}
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  border: none;
+  width: 45px;
+  height: 40px;
+  border-radius: 21px;
+  background-color: white;
+}
+.previous:hover,
+.next:hover {
+  background: #efefef;
+  cursor: pointer;
+}

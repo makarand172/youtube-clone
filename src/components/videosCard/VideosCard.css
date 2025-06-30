@@ -1,0 +1,18 @@
+.video-card-container {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.video-card-container h4 {
+  padding: 0;
+  margin: 15px 0px;
+}
+
+.video-card-container img {
+  border-radius: 12px;
+}
+.video-card-container label {
+  font-weight: 500;
+  margin: 5px 0;
+}

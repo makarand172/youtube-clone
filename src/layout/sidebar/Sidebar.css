@@ -1,0 +1,38 @@
+.sidebar-container {
+  grid-area: sidebar;
+  padding-left: 20px;
+  padding-top: 10px;
+  position: fixed;
+  top: 60px;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+}
+nav li:hover {
+  background-color: #efefef;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.active-li {
+  background-color: #efefef;
+  border-radius: 12px;
+}
+
+h4 {
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+hr {
+  border-top: 1px;
+  margin: 15px 0px;
+}

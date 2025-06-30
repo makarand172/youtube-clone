@@ -1,0 +1,57 @@
+.header-container {
+  height: 7vh;
+  display: grid;
+  grid-template-columns: 50px 100px auto 100px;
+  padding: 6px 26px;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: #fffffff9;
+  opacity: 20px;
+}
+
+.hamburger-icon {
+  grid-column: 1/2;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.youtube-logo {
+  grid-column: 2/3;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.searchbar-container {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+}
+.searchbar-container input {
+  width: 550px;
+  height: 38px;
+  border: 0.1px solid gray;
+  border-radius: 20px 0 0 20px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.searchbar-container button {
+  width: 65px;
+  height: 41.5px;
+  border: 0.1px solid gray;
+  border-radius: 0 20px 20px 0;
+  border-left: none;
+  cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+.user-icon {
+  grid-column: 4/5;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
