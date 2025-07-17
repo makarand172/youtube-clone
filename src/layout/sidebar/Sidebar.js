@@ -9,14 +9,20 @@ import {
 } from "react-icons/si";
 import { MdMusicNote, MdSubscriptions } from "react-icons/md";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-  const [liItemHomeActive, setLiItemHomeActive] = useState(0);
+  const sidebarToggle = useSelector((store) => store.youtube.sidebarToggle);
+  const [liItemHomeActive, setLiItemHomeActive] = useState(null);
   const [liItemSubsActive, setLiItemSubsActive] = useState(null);
+  if (!sidebarToggle) return null;
   const liItemHome = [
     <>
-      <IoMdHome size={26} />
-      Home
+      <Link className="li-link" to="/">
+        <IoMdHome size={26} />
+        Home
+      </Link>
     </>,
     <>
       <SiYoutubeshorts size={22} />

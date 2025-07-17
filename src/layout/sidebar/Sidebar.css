@@ -1,12 +1,16 @@
 .sidebar-container {
+  background-color: white;
   grid-area: sidebar;
   padding-left: 20px;
   padding-top: 10px;
+  padding-right: 20px;
   position: fixed;
-  top: 60px;
+  width: 14%;
+  height: 100%;
 }
 
-nav li {
+nav li,
+.li-link {
   display: flex;
   align-items: center;
   list-style: none;
@@ -35,4 +39,10 @@ h4 {
 hr {
   border-top: 1px;
   margin: 15px 0px;
+}
+
+.li-link {
+  padding: 0;
+  text-decoration: none;
+  color: black;
 }

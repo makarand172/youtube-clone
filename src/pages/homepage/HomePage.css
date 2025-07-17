@@ -3,8 +3,6 @@
   display: grid;
   grid-template-columns: 18vw 80.93vw;
   grid-template-areas: "sidebar bodycontainer";
-}
-
-.body-container {
-  grid-area: bodycontainer;
+  position: relative;
+  top: 8vh;
 }

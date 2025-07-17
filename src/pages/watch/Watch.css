@@ -1,0 +1,13 @@
+.watch-container {
+  padding: 25px;
+  width: 1000px;
+}
+
+.iframe {
+  border: none;
+  border-radius: 15px;
+}
+
+h2 {
+  font-size: 20px;
+}

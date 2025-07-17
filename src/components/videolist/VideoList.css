@@ -1,8 +1,7 @@
 .video-list-container {
-  padding: 8px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   position: relative;
-  top: 80px;
 }

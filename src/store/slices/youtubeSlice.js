@@ -3,15 +3,19 @@ import { createSlice } from "@reduxjs/toolkit";
 const youtubeSlice = createSlice({
   name: "youtube",
   initialState: {
-    sidebarToggle: null,
+    sidebarToggle: true,
+    watchVideoData: null,
   },
   reducers: {
     toggleSidebar: (state, actions) => {
-      state.mostPopularVideos = actions.payload;
+      state.sidebarToggle = actions.payload;
+    },
+    addWatchVideoData: (state, actions) => {
+      state.watchVideoData = actions.payload;
     },
   },
 });
 
-export const { toggleSidebar } = youtubeSlice.actions;
+export const { toggleSidebar, addWatchVideoData } = youtubeSlice.actions;
 
 export default youtubeSlice.reducer;

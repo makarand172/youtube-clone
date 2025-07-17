@@ -1,22 +1,26 @@
+import { Link } from "react-router-dom";
 import "./VideosCard.css";
+import { useDispatch } from "react-redux";
+import { addWatchVideoData } from "../../store/slices/youtubeSlice";
+import { formatNumber } from "../../utils/helper";
 
 const VideosCard = ({ data }) => {
-  console.log(data);
-  function formatNumber(num) {
-    if (num >= 1000000) {
-      return (num / 1000000).toFixed(1) + "M";
-    } else if (num >= 1000) {
-      return (num / 1000).toFixed(1) + "K";
-    }
-    return num.toString();
-  }
+  const dispatch = useDispatch();
   return (
-    <div className="video-card-container">
-      <img src={data?.snippet?.thumbnails?.medium?.url} alt="thumbnail" />
-      <h4>{data?.snippet?.title}</h4>
-      <label>{data?.snippet?.channelTitle}</label>
-      <label>{formatNumber(data?.statistics?.viewCount)} views</label>
-    </div>
+    <Link
+      className="link"
+      to={`/watch?v=${data.id}`}
+      onClick={() => {
+        dispatch(addWatchVideoData(data));
+      }}
+    >
+      <div className="video-card-container">
+        <img src={data?.snippet?.thumbnails?.medium?.url} alt="thumbnail" />
+        <h4>{data?.snippet?.title}</h4>
+        <label>{data?.snippet?.channelTitle}</label>
+        <label>{formatNumber(data?.statistics?.viewCount)} views</label>
+      </div>
+    </Link>
   );
 };
 
