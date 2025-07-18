@@ -2,8 +2,8 @@
   padding: 10px 0px;
   display: flex;
   position: sticky;
-  top: 66px;
-  z-index: 100;
+  top: 53px;
+  z-index: 1;
   background: #fffffff9;
   width: 100%;
 }

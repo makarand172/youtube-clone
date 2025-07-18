@@ -1,0 +1,23 @@
+.comment-layout-container {
+  display: flex;
+  gap: 15px;
+}
+
+.comment-details h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.comment-details h4 {
+  padding: 10px 0px;
+}
+
+.comments-replies {
+  padding-left: 30px;
+  margin-left: 10px;
+  border-left: 1px solid black;
+}
+
+.comments-list-container {
+  margin-bottom: 10px;
+}

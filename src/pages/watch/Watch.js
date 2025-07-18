@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { toggleSidebar } from "../../store/slices/youtubeSlice";
 import "./Watch.css";
 import { API_KEY, applicationConstants } from "../../utils/appConstants";
+import Comments from "../../components/comments/Comments";
 
 const Watch = () => {
   const [videoDetails, setVideosDetails] = useState();
@@ -53,6 +54,7 @@ const Watch = () => {
         ></iframe>
       </div>
       <h2>{videoDetails?.snippet?.title}</h2>
+      <Comments />
     </div>
   );
 };

@@ -5,6 +5,7 @@ const youtubeSlice = createSlice({
   initialState: {
     sidebarToggle: true,
     watchVideoData: null,
+    videosList: [],
   },
   reducers: {
     toggleSidebar: (state, actions) => {
@@ -13,9 +14,13 @@ const youtubeSlice = createSlice({
     addWatchVideoData: (state, actions) => {
       state.watchVideoData = actions.payload;
     },
+    addVideoList: (state, actions) => {
+      state.videosList = actions.payload;
+    },
   },
 });
 
-export const { toggleSidebar, addWatchVideoData } = youtubeSlice.actions;
+export const { toggleSidebar, addWatchVideoData, addVideoList } =
+  youtubeSlice.actions;
 
 export default youtubeSlice.reducer;
