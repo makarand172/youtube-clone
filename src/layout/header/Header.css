@@ -2,7 +2,7 @@
   max-height: 7vh;
   display: grid;
   grid-template-columns: 50px 100px auto 100px;
-  padding: 6px 26px;
+  padding: 6px 25px;
   align-items: center;
   position: fixed;
   z-index: 100;

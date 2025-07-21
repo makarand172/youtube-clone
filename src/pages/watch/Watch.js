@@ -5,6 +5,7 @@ import { toggleSidebar } from "../../store/slices/youtubeSlice";
 import "./Watch.css";
 import { API_KEY, applicationConstants } from "../../utils/appConstants";
 import Comments from "../../components/comments/Comments";
+import LiveChat from "../../components/liveChat/LiveChat";
 
 const Watch = () => {
   const [videoDetails, setVideosDetails] = useState();
@@ -42,8 +43,8 @@ const Watch = () => {
       <div className="video-ember-container">
         <iframe
           className="iframe"
-          width="1000"
-          height="520"
+          width="950"
+          height="500"
           src={
             "https://www.youtube.com/embed/" +
             urlParams.get("v") +
@@ -51,10 +52,11 @@ const Watch = () => {
           }
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-        ></iframe>
+        />
+        <h2>{videoDetails?.snippet?.title}</h2>
+        <Comments />
       </div>
-      <h2>{videoDetails?.snippet?.title}</h2>
-      <Comments />
+      <LiveChat />
     </div>
   );
 };

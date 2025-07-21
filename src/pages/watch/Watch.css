@@ -1,6 +1,14 @@
 .watch-container {
+  display: flex;
+  gap: 15px;
   padding: 25px;
-  width: 1000px;
+  width: 98.93vw;
+  box-sizing: border-box;
+  grid-area: sidebar / sidebar / bodycontainer / bodycontainer;
+}
+
+.video-ember-container {
+  width: 200%;
 }
 
 .iframe {

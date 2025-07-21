@@ -18,8 +18,8 @@ const CommentsList = ({ comments }) => {
   return (
     <div>
       {comments?.map((comment) => (
-        <div className="comments-list-container">
-          <CommentLayout key={comment.name} data={comment} />
+        <div key={comment.name} className="comments-list-container">
+          <CommentLayout data={comment} />
           <div className="comments-replies">
             <CommentsList comments={comment.replies} />
           </div>

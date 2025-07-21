@@ -12,3 +12,5 @@ export const applicationConstants = {
 };
 
 export const API_KEY = "AIzaSyCHbAFo_AiIBpxjr8_Ufu6aSTLa_wmDCQs";
+
+export const OFFSET_LIVECHAT = 27;
